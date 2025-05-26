@@ -85,7 +85,7 @@ export default function MoviePlayer({ movie, onBack }: MoviePlayerProps) {
           players: {
             alloha: { enable: true, position: 1 },
             kodik: { enable: true, position: 2 },
-            videocdn: { enable: false, position: 3 },
+            videocdn: { enable: true, position: 3 },
             turbo: { enable: false, position: 4 },
           },
         })

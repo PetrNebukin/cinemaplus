@@ -44,13 +44,13 @@ export default function Hero({ onSearch }: HeroProps) {
               search
             </span>
             <input
-              type="text"
-              placeholder="Поиск..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              onKeyPress={handleKeyPress}
-              className="flex-1 bg-transparent text-white text-lg placeholder-navy-400 focus:outline-none w-full"
-            />
+  type="text"
+  placeholder="Поиск..."
+  value={searchQuery}
+  onChange={(e) => setSearchQuery(e.target.value)}
+  onKeyPress={handleKeyPress}
+  className="flex-1 bg-transparent text-white text-lg placeholder-navy-400 focus:outline-none min-w-0"
+/>
             <button onClick={handleSearch} className="btn-primary ml-4 flex items-center space-x-2 group flex-shrink-0">
               <span className="material-icons group-hover:scale-110 transition-transform">search</span>
               <span className="hidden sm:inline">Найти</span>

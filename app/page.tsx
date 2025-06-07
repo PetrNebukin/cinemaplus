@@ -31,7 +31,7 @@ export default function Home() {
     setIsSearching(true)
 
     try {
-      const response = await fetch(`https://kp.kinobox.tv/films/search/?query=${encodeURIComponent(query)}&limit=20`)
+      const response = await fetch(`https://kp.kinobox.tv/movies/search/?query=${encodeURIComponent(query)}&limit=20`)
       if (response.ok) {
         const data = await response.json()
         const filtered =
